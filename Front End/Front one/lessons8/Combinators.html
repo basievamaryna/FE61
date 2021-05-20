@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Combinators</title>
+</head>
+
+	<style>
+		/*div p{
+			background:#1AB2E2;
+		}*/ /*стили задаются для всех p если их родитель div*/
+		
+		/*div > p{
+			background:#1AB2E2;
+		} *//*стили задаются для всех p если их родитель div и больше на ранг р*/
+		
+		/*div+p+p+p{
+			background:#1AB2E2;
+		}*//*стили задаются для всех p от первого div который находится в деректории*/
+		
+		div ~ p{
+			background:#1AB2E2;
+		}/*стили задаются для всех p от первого div который находится в деректории исключая родительских  div*/
+	</style>
+<body>
+	<div>
+		<h2>Lorem Ipsum</h2>
+	</div>
+	<p>color</p>
+	<p>color</p>
+	<p>color</p>
+	
+	<div>
+		<p>color</p>
+		<p>color</p>
+	</div>
+	<div>
+		<p>color</p>
+		<p>color</p>
+	</div>
+	
+	<p>color</p>
+	<p>color</p>
+</body>
+</html>

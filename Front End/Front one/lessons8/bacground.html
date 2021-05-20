@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS background</title>
+</head>
+	
+<style>
+	*{
+		padding:0;
+		margin: 0;
+	}
+	/*.container{
+		width:1170px;
+		margin: 0 auto;
+	}*/
+	.box{
+		width: 100%;
+		padding: 200px 0px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.bacground{
+		background-color: #3F8C91;
+	}
+	.bacground-image{
+		background-image:url("img/bg.png");
+		background-repeat: no-repeat;
+	}
+	.bacground-cover{
+		background:url("img/bg.png") no-repeat;
+		background-size: cover;
+		background-position:left center;
+	}
+	.bacground-attachment{
+		background:url("img/bg.png") no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		
+	}
+	
+	.bacground-position-bg{
+		background: url("img/bg.png") no-repeat left center / cover;
+	}
+	.bacground-position{
+		background: url(img/bg.png), url(img/star.png), url(img/star.png);
+		background-position: center, right, left;
+		background-size: 30%, 10%, 10%;
+		background-repeat: no-repeat;
+	}
+</style>
+	
+<body>
+	<div class="container">
+		 <div class="bacground box">
+			 <h2>background color</h2>
+		 </div>
+		 <div class="bacground-image box">
+			 <h2>bacground image</h2>
+		 </div>
+		<div class="bacground-cover box">
+			 <h2>bacground cover</h2>
+		 </div>
+		<div class="bacground-attachment box">
+			 <h2>bacground attachment</h2>
+		 </div>
+		<div class="bacground-position-bg box">
+			 <h2>bacground position bg</h2>
+		 </div>
+		<div class="bacground-position box">
+			 <h2>bacground position</h2>
+		 </div>
+	</div>
+</body>
+</html>
