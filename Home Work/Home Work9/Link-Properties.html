@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Link properties</title>
+</head>
+	
+<style>
+	.main{
+		padding:100px 0;
+	}
+	.hover_link{
+		width:200px;
+		background: #1E19D8;
+		text-align: center;
+		padding: 20px;
+		display: block;
+		text-decoration: none;
+		color: #fff;
+		font-size: 30px;
+	}
+	.hover_link:hover{
+		background: #12DF17;
+	}
+	.link:link{
+		text-decoration: none;
+		font-size: 16px;
+		display: block;
+	}
+	a:focus,
+	a:visited{
+		color:aqua;
+	}
+	input:focus{
+		border:#F10C0F solid 1px;
+	}
+	.nav ul.menu{
+		background: #0DC3F7;
+	}
+	.nav ul.menu li.item a{
+		font-size:16px;
+		font-weight: bold;
+		
+		padding: 10px;
+		display: block;
+	}
+	.nav ul.menu li.active a:active,
+	.nav ul.menu li.active a,
+	.nav ul.menu li.item a:hover{
+		color: aquamarine;
+	}
+	.nav ul.menu li ul.sub-menu{
+		background:#D51EE9;
+	}
+	.nav ul.menu li ul.sub-menu li.item a{
+		color: #ccc;
+	}
+	.nav ul.menu li ul.sub-menu li ul.sub-menu{
+		background: #19E12D;
+	}
+	.nav ul.menu li ul.sub-menu li ul.sub-menu li.item a{
+		color:#151111;
+	}
+</style>
+	
+<body>
+	<div class="main">
+		<a href="#" class="hover_link">перейти к  hover</a>
+		<a href="#" class="link">Link</a>
+		<form>
+			 <input type="text" placeholder="Name" />
+			<input type="text" placeholder="Last Name" />
+			<button>Submit</button>
+		</form>
+	</div>
+ <nav class="nav">
+	<ul class="menu">
+		<li class="item"><a href="#" class="link-item">Home</a></li>
+		<li class="item active"><a href="#" class="link-item">Product</a>
+			<ul class="sub-menu">
+				<li class="item"><a href="#" class="link-item">Product1</a></li>
+				<li class="item"><a href="#" class="link-item">Product2</a></li>
+				<li class="item"><a href="#" class="link-item">Product3</a></li>
+				<li class="item"><a href="#" class="link-item">Product4</a>
+					<ul class="sub-menu">
+						<li class="item"><a href="#" class="link-item">Product1</a></li>
+						<li class="item"><a href="#" class="link-item">Product2</a></li>
+						<li class="item"><a href="#" class="link-item">Product3</a></li>
+						<li class="item"><a href="#" class="link-item">Product4</a></li>
+						<li class="item"><a href="#" class="link-item">Product5</a></li>
+					</ul>
+				</li>
+				<li class="item"><a href="#" class="link-item">Product5</a></li>
+			</ul>
+		</li>
+		<li class="item"><a href="#" class="link-item">Contacts</a></li>
+	</ul>
+ </nav>
+	
+</body>
+</html>
