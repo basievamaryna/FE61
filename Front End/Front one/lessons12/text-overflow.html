@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text-overflow</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.main{
+		width: 900px;
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+	.main div{
+		margin: 30px;
+		
+	}
+	.clip{
+		border: 1px solid #000;
+		width: 300px;
+		white-space: nowrap;/*запрещает перенос строки*/
+		overflow: hidden;/*Обрезает все что не помещкется в облать ширины*/
+		padding: 5px;
+		text-overflow: ellipsis;/*Добавляет много точие*/
+	}
+	.word-wrap{
+		border: solid 1px #000;
+		font-size: 18px;
+		padding: 10px;
+		width: 150px;
+		word-break: break-word;/*для переноса строк*/
+	}
+	.word-break{
+		border: solid 1px #000;
+		font-size: 18px;
+		padding: 10px;
+		width: 136px;
+		word-break: break-all;/*для переноса символов*/
+	}
+</style>
+<body>
+	<div class="main">
+		<div class="clip">
+			lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar
+		</div>
+		
+		<div class="word-wrap">
+			<p>Lorem ipsum dolar 1</p>
+			<p>Lorem ipsum dolar 2</p>
+			<p>Lorem ipsum dolar 3</p>
+			<p>Lorem ipsum dolar 4</p>
+			<p>Lorem ipsum dolar 5</p>
+			<p>Lorem ipsum dolar 6</p>
+			<p>Lorem ipsum dolar 7</p>
+			<p>Lorem ipsum dolar 8</p>
+		</div>
+		
+		<div class="word-break">
+			<p>Lorem ipsum dolar 1</p>
+			<p>Lorem ipsum dolar 2</p>
+			<p>Lorem ipsum dolar 3</p>
+			<p>Lorem ipsum dolar 4</p>
+			<p>Lorem ipsum dolar 5</p>
+			<p>Lorem ipsum dolar 6</p>
+			<p>Lorem ipsum dolar 7</p>
+			<p>Lorem ipsum dolar 8</p>
+		</div>
+	</div>
+</body>
+</html>
