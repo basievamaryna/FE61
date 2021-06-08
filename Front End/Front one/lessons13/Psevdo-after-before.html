@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Psevdo-after-before</title>
+</head>
+<style>
+	.box{
+		width: 500px;
+		margin: 0 auto;
+	}
+	.call{
+		position: relative;
+		font-size: 18px;
+		color: #333;
+		font-weight: bold;
+		text-decoration: none;
+		padding-left: 24px;
+		padding-right: 32px;
+	}
+	.call:before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url("img/phone.png") no-repeat;
+		width: 20px;
+		height: 25px;
+		background-size: contain;
+	}
+	.call:after{
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 6px;
+		background: url("img/arrow.png") no-repeat;
+		
+		width: 20px;
+		height: 25px;
+		background-size: contain;
+	}
+	.text{
+		position: relative;
+		margin: 40px 20px;
+		font-size: 0;
+	}
+	.text:before{
+		content: "Привет";
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 50px;
+	}
+</style>
+<body>
+	<div class="box">
+		<a href="#" class="call">call me</a>
+		<div class="text">Hello</div>
+	</div>
+</body>
+</html>

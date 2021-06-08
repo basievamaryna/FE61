@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table</title>
+</head>
+<style>
+	table.table_main,
+	th,
+	td{
+		border: 1px solid #000;
+	}
+	table.table_main{
+		border-collapse: collapse;
+	}
+	table.table_main tr td{
+		height: 50px;
+		vertical-align: bottom;
+	}
+	table.table_main tr:hover{
+		background: #F88C8E;
+	}
+	table.table_main tr:nth-child(odd){ /*:nth-child(even) псевдо класс использовать чотные и не четные числа*/
+		background: #626251;
+	}
+</style>
+<body>
+	 <table class="table_main">
+			 <tr>
+				 <th>First column</th>
+				 <th>Second column</th>
+				 <th>Five row th</th>
+			 </tr>
+			 <tr>
+				 <td>Row 1, cell1</td>
+				 <td>Row 1, cell2</td>
+				 <td>Row 1, cell3</td>
+			 </tr>
+			  <tr>
+				 <td>Row 1, cell1</td>
+				 <td>Row 1, cell2</td>
+				 <td>Row 1, cell3</td>
+			 </tr>
+			 <tr>
+				 <td>Row 1, cell1</td>
+				 <td>Row 1, cell2</td>
+				 <td>Row 1, cell3</td>
+			 </tr>
+			  <tr>
+				 <td>Row 1, cell1</td>
+				 <td>Row 1, cell2</td>
+				 <td>Row 1, cell3</td>
+			 </tr>
+			  <tr>
+				 <td>Row 1, cell1</td>
+				 <td>Row 1, cell2</td>
+				 <td>Row 1, cell3</td>
+			 </tr>
+	</table>
+</body>
+</html>
