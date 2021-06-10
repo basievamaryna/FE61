@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>efect-shadow</title>
+</head>
+<style>
+	h1{
+		text-shadow: 2px 2px;
+	}
+	h2{
+		text-shadow: 2px 2px red;
+	}
+	h3{
+		text-shadow: 2px 2px 5px red;
+	}/*первое значение горизонтальная тень, второе значение вертикальная тень, третье значение размытие цвета, четвертое значение цвет тени*/
+	.met1{
+		text-shadow: 0px 0px 3px red;
+	}
+	.met2{
+		text-shadow: 0px 0px 3px #ff0000, 0 0 5px #0000ff;
+	}
+	.met3{
+		text-shadow: 0px 0px 3px #333, 0 0 5px #0000ff, 0 0 5px #000;
+	}
+	.met4{
+		text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+	} 
+	.box{
+		width: 200px;
+		height: 100px;
+		margin-bottom: 30px;
+		background: #277B7D;
+	}
+	.box-shadow1{
+		box-shadow: 10px 10px;
+	}
+	.box-shadow2{
+		box-shadow: 10px 10px #ccc;
+	}
+	.box-shadow3{
+		box-shadow: 10px 10px 5px #ccc;
+	}
+	.box-shadow4{
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+	.box-shadow5{
+		box-shadow: inset 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+</style>
+<body>
+	<h1>Text Shadow</h1>
+	<h2>Text Shadow</h2>
+	<h3>Text Shadow</h3>
+	<h2 class="met1">Text Shadow</h2>
+	<h2 class="met2">Text Shadow</h2>
+	<h2 class="met3">Text Shadow</h2>
+	<h2 class="met4">Text Shadow</h2>
+	<h4>Box Shadow</h4>
+	<div class="box box-shadow1"></div>
+	<div class="box box-shadow2"></div>
+	<div class="box box-shadow3"></div>
+	<div class="box box-shadow4"></div>
+	<div class="box box-shadow5"></div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>border-radius</title>
+</head>
+<style>
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.radius-box{
+		background: #1D2DE9;
+		padding: 20px;
+		width: 150px;
+		height: 150px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+	}
+	.radius1{
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+		-o-border-radius: 25px;
+		border-radius: 25px;
+	}
+	.radius2{
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		-o-border-radius: 100px;
+		border-radius: 100px;
+	}
+	.radius3{
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 40px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 50px;
+	}
+	.radius4{
+		border-radius: 10px 20px 30px 40px;
+	}
+	.radius5{
+		background: transparent;
+		padding: 0;
+		border-bottom: 150px solid transparent;
+		border-top: 150px solid transparent;
+		border-left: 150px solid #1D2DE9;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="radius1 radius-box"></div>
+		<div class="radius2 radius-box"></div>
+		<div class="radius3 radius-box"></div>
+		<div class="radius4 radius-box"></div>
+		<div class="radius5 radius-box"></div>
+	</div>
+</body>
+</html>
