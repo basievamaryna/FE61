@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform</title>
+</head>
+<style>
+	.box{
+		width: 200px;
+		height: 100px;
+		opacity: 0.8;
+		background:#929292;
+		margin-bottom: 30px;
+	}
+	.box1{
+		transition: ease 1s;
+	}
+	.box2{
+		transition: linear 1s;
+	}
+	.box3{
+		transition: ease-out 1s;
+	}
+	.box4{
+		transition: ease-in-out 1s;
+	}
+	.box:hover{
+		background: rgba(176,138,168,0.8);
+		
+	}
+	.box1:hover{
+		transform: translateX(40px);
+		
+	}
+	.box2:hover{
+		transform: translateY(-30px);
+	}
+	.box3:hover{
+		transform: scale(2,3);
+	}
+	.box4{
+		transform: rotate(20deg);
+	}
+	.box5:hover{
+		transform: skew(20deg,30deg);
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="box box1">
+			TranslateX(20px)
+		</div>
+		<div class="box box2">
+			TranslateY(20px)
+		</div>
+		<div class="box box3">
+			scale
+		</div>
+		<div class="box box4">
+			rotate(20deg)
+		</div>
+		<div class="box box5">
+			skew(20deg, 30deg)
+		</div>
+		<div class="box box6">
+			matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());
+		</div>
+	</div>
+</body>
+</html>

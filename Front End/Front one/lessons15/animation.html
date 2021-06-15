@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>animation</title>
+</head>
+<style>
+	/*animation-name: test-animation; - имя анимации*/
+	/*animation-duration:2s; - скорость анимации*/
+	/*animation-delay:5s; - перед запуском пройдет 5 секунд*/
+	/*animation-iteration-count: 3; - анимация воспроизведется 3 раза*/
+	/*animation-direction: normal; - анимация воспроизведется в прямом порядке как обычно*/
+	/*animation-direction: reverse; - анимация воспроизведется в обратном порядке от  to до from */
+	/*animation-derection: alternate; -  четные повторы анимации воспроизведется в обратном порядке, нечетныё*/
+	/*animation-derection: alternate-reverse; -  нечетные повторы анимации воспроизведется в обратном порядке, четныё*/
+	/*anamation-timing-function: steps(7, end) - шаги анимации*/
+	
+	.square{
+		width: 50px;
+		height: 50px;
+		background: #EF1248;
+		position: relative;
+		animation-name: square;
+		animation-duration:7s;
+		animation-iteration-count: 3; /*infinite*/
+	}
+	
+	@keyframes square{
+		from{
+			top:0;
+			left: 0;
+		}
+		25%{
+			top: 0;
+			left: 400px;
+		}
+		50%{
+			top: 400px;
+			left: 400px;
+			background: #14C025;
+		}
+		75%{
+			top: 400px;
+			left: 0;
+			background: #22A0C5;
+		}
+		to{
+			top: 0;
+		}
+	} 
+</style>
+<body>
+	<div class="square"></div>
+</body>
+</html>
