@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+</head>
+<style>
+	ul#bar{
+		top:-5.5em;
+		right: 5em; 
+		padding: 25px;
+		margin: 0;
+		position: absolute;
+		width: 20px;
+		background: #333;
+		text-align: center;
+		
+		-webkit-transition: top 1s ease-out 0.5s;
+		-moz-transition: top 1s ease-out 0.5s;
+		-o-transition: top 1s ease-out 0.5s;
+		transition: top 1s ease-out 0.5s;
+	}
+	ul#bar:hover{
+		top: 0;
+	}
+	ul#bar li{
+		list-style: none;
+		color: #fff;
+	}
+	.primer{
+		width: 100px;
+		height: 100px;
+		background: #444;
+		margin: 30px;
+		transition: all 1s linear;
+	}
+	.primer:hover{
+		width: 120px;
+		height: 120px;
+		background: #AAA;
+	}
+</style>
+<body>
+	<ul id="bar">
+		<li>ease-out</li>
+		<li>2</li>
+		<li>3</li>
+		<li>&darr;</li>
+	</ul>
+	
+	<div class="primer">linear</div>
+</body>
+</html>

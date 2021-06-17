@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sprite animation</title>
+</head>
+<style>
+	.sprite-hover{
+		width: 123px;
+		height: 273px;
+		background: url("img/spritesheet.png")no-repeat;
+	}
+	.sprite-hover:hover{
+		width: 123px;
+		height: 273px;
+		background-position: -123px 0;
+	}
+	
+	.capguy{
+		width: 184px;
+		height: 325px;
+		background-image: url("img/capguy-walk.png");
+		margin: 0 auto;
+		
+		-webkit-animation: capguy 1s steps(8) infinite;
+		-moz-animation: capguy 1s steps(8) infinite;
+		-o-animation: capguy 1s steps(8) infinite;
+		animation: capguy 1s steps(8) infinite;
+	}
+	@-webit-keyframes capguy{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	@-moz-keyframes capguy{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	@-o-keyframes capguy{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	@keyframes capguy{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+	
+	.spriteAnime{
+		background-image: url("img/capguy-walk.png");
+		width: calc(1472px/8);
+		height: 325px;
+		animation-name: man;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(8);
+	}
+	@keyframes man{
+		from{
+			background-position: 0px;
+		}
+		to{
+			background-position: -1472px;
+		}
+	}
+</style>
+<body>
+	<div class="sprite-hover"></div>
+	<div class="capguy"></div>
+	<div class="spriteAnime"></div>
+</body>
+</html>
