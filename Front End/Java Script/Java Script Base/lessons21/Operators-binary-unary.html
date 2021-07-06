@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Operators binary unary </title>
+</head>
+<script>
+	//В операторах числа называются (операнд или аргумент)
+	let y = 2;
+	
+	y = -y;
+	console.log(y);// -2  применили унарный минус
+	
+	//бинарный когда применяем к двум операндам или аргументам
+	let a =3, b=2;
+	console.log(a-b);//вычесление 2 числа становится бинарным, а числа становятся операндами
+	
+	console.log(5 % 2); //1 взятие остатков
+	
+	//возведение в степень **
+	
+	console.log(2 ** 3); // 8 (2*2*2, 3 раза)
+	
+	
+	console.log(4 ** (1/2));// 2
+	
+	//сложение строк + (бинарный плюс)
+	let str = "cat" + " " + "is my famaliy";
+	console.log(str);
+	
+	console.log("1" + 2);//12
+	console.log(2 + "1");//21
+	console.log(2+2+"1");//41
+	console.log("1"+2+2);
+	
+	
+	//унарный плюс
+	let x =1 ;
+	console.log(+x);
+	let z = -2;
+	console.log(+z);
+	
+	console.log(+true);//1
+	console.log(+"");//0
+	
+	let apple1 = "2";
+	let apple2 = "5";
+	console.log(apple1+apple2);//использовали бинарный плюс для сложения
+	console.log(+apple1 + +apple2);// сначала используется унарный плюс преобразовал в число потом сложил с помощью бинарного плюса 7
+	
+	let numv = 2*2+1;
+	console.log(numv); // 5
+	
+	
+	let v = 1;
+	let n = 2;
+	
+	let c = 3 -(v=n+1);
+	console.log(v);
+	console.log(c);
+	
+	//побитовые операторы (когда перед присвоением используем арифметику)
+	let qwert = 3;
+	qwert += 5;
+	qwert *= 4;
+	console.log(qwert);
+	
+	
+	// Инкремент ++ / Декремент --
+	//Инкремент увеличивает переменую числа на +1
+	let coun = 2;
+	coun ++;
+	console.log(coun);//3
+	
+	//Декремент уменьшает переменую числа на -1
+	
+	let coun2 = 2;
+	coun2 --;
+	console.log(coun2);//1
+</script>
+<body>
+</body>
+</html>
