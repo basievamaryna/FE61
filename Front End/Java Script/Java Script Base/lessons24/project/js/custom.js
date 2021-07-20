@@ -3,6 +3,8 @@ jQuery.noConflict();
 jQuery(document).ready(function () {
 
     'use strict';
+	
+	/*responsive menu*/
 	jQuery('.icon-humburher').click(function(){
 		jQuery('.nav-menu').show("slow");
 	});
@@ -10,6 +12,7 @@ jQuery(document).ready(function () {
 	jQuery('.closed').click(function(){
 		jQuery('.nav-menu').hide("slow");
 	});
+	/*responsive menu*/
 	
 	let note = jQuery('#note'),
 		ts = new Date(2014, 11, 1),

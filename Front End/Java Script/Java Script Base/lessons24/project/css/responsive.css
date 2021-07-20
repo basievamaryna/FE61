@@ -24,6 +24,7 @@
 		left: 0;
 		top: 0;
 		padding: 40px;
+		    z-index: 10;
 	}
 	.nav-menu ul.sub-menu li a button:hover {
     color:aqua;

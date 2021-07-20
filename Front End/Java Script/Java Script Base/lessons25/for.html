@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>for</title>
+</head>
+
+<body>
+	 <button onClick="func()">Send me</button>
+	<div class="result"></div>
+</body>
+	<script>
+		/*for(начало; условие; шаг){
+			тело цикла
+		}*/
+		let result;
+		result = document.querySelector(".result");
+		
+		function func(){
+			for(let i =1; i<=50; i++){
+				result.innerHTML += i + " ";
+			}
+		}
+		
+		let i =1;
+		for (; i<=3;){
+			console.log(i++);
+		}
+	</script>
+</html>

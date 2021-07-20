@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>While</title>
+</head>
+
+<body>
+	<button onClick="fl()">Send me</button>
+	<button onClick="fl2()">Send me</button>
+	<div class="vuvod"></div>
+	<div class="vuvod2"></div>
+</body>
+<script>
+	/*while(условие){
+		  тело цикла
+		  }
+	do{
+	  тело цикла
+	}while(условие)
+		*/
+		
+	function fl(){
+		let vuvod;
+		vuvod = document.querySelector(".vuvod");
+		
+		let i = 1;
+		while(i <= 50){
+			vuvod.innerHTML += i + " ";
+			i++;
+			//i = i+2;
+		}
+	}
+	
+	function fl2(){
+		let vuvod2;
+		vuvod2 = document.querySelector(".vuvod2");
+		
+		let j = 50;
+		do{
+			vuvod2.innerHTML += j + " ";
+			j--;
+		}while(j > 0);
+	}
+	
+	
+</script>
+</html>

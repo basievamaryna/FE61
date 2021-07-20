@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For in of</title>
+</head>
+<script>
+	let data = ["str1","str2","str3"];
+	
+	let user = [
+		{name: "Maria", lastName: "Petrova", work: true},
+		{name2: "Nastya", lastName2: "Nova", work2: false},
+		{name3: "Olga", lastName3: "Nekrasova", work3: true}
+		
+	];
+	
+	console.log(" - FOr - IN");
+	//console.log(data[0]);
+	
+	for (let i in data){//in пропускает шаг i++
+		console.log(i);
+		console.log(data[i]);
+	}
+
+	console.log("- FOR break -");//обривает цикл
+	for(let i =0; i<= 8; i++){
+		if(i==3){
+			break;
+		}
+		console.log(i);
+	}
+	
+	console.log("FOR - CONTINUE");// пропускает итерацию
+	for(let i = 0; i<=8; i++){
+		if(i==3){
+			continue;
+		}
+		console.log(i);
+	}
+	
+	console.log("- FOR - OF -");// of получает только значение
+	for(let i of data){
+		console.log(i);
+	}
+	
+			
+</script>
+<body>
+</body>
+</html>

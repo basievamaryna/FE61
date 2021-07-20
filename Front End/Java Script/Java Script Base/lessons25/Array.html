@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array</title>
+</head>
+<script>
+	//let arr new Array();
+	/*let arr = [];
+	console.log(arr);
+	
+	let arr2 = ["str1","str2","str3",2, 6, 2.14, false];
+	console.log(arr2);
+	
+	console.log(arr2[0]);
+	console.log(arr2[2]);
+	console.log(arr2[3]);
+	console.log(arr2[4]);
+	
+	let arr3 = ["cat","dog","mouse"];
+	console.log(arr3.length);*/
+	
+	
+</script>
+<body>
+	<script>
+	let arr = ["cat", "dog", "mouse"];
+	arr[0] = "cats";
+	arr[3] = "pets";
+	//arr[5] = "pets";//добавляем массив но получается есть дыра между массивами
+	//delete arr[1];// удаляет только значение и оставляет индекс который может оставлять за собой undefined
+	//arr.splice(1,1);// 1 - значение какой элемент удаляем 2-значение и какое количество удалить массивов
+	//console.log(arr[5]);
+	arr.pop();//pop удаляет последний элемент массива
+	arr.push("chiken");//push добавляет в конец новый массив
+	arr.shift();//shift удвляет єлемент массива в начале, второй элемент становится на перед вместо удалненого
+	arr.unshift("straus");//unshift добавляет в начало
+    arr.reverse();//идет в обратном направлении
+	
+	
+	
+	//arr.length = 2;
+	for(let i = 0; i<arr.length; i++){
+		document.write(arr[i] + "<br/>");
+	}
+		let matrix = [
+			[1,2,3],
+			[4,5,6],
+			[7,8,9]
+		]
+		console.log(matrix[1][1]);
+	
+		let arr2 = [123, 45, 1, 11, 67, 13];
+		arr2.sort();
+		console.log(arr2);
+		
+		
+		//method array
+		
+		
+		
+	</script>
+</body>
+</html>
