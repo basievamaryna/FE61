@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Object get and set</title>
+</head>
+
+<body>
+	<div id="lang"></div>
+	<div id="lang2"></div>
+	<div id="person3"></div>
+	<div id="person4"></div>
+	<div id="person5"></div>
+	<div id="counter"></div>
+</body>
+	<script>
+		let person = {
+			firstName : "Maya",
+			lastName : "Dos",
+			language: "ua",
+			get lang(){
+				return this.language;
+			}
+		};
+		document.getElementById("lang").innerHTML = "Get method" + ": " + person.lang;
+		console.log(person);
+		
+		
+		let person2 = {
+			firstName : "Maya",
+			lastName : "Dos",
+			language: " ",
+			set lang(lang){
+				this.language = lang;
+			}
+		};
+		person2.lang = "ua";
+		
+		document.getElementById("lang2").innerHTML = "Set method" + ": " + person2.language;
+		console.log(person2);
+		
+		
+		let person3 = {
+			firstName : "Maya2",
+			lastName : "Dos2",
+			fullName: function(){
+				return this.firstName + " " + this.lastName;
+			}
+		
+		};
+		document.getElementById("person3").innerHTML = person3.fullName();
+		
+		let person4 = {
+			firstName : "Maya3",
+			lastName : "Dos3",
+			get fullName(){
+				return this.firstName + " " + this.lastName;
+			}
+			
+		};
+		document.getElementById("person4").innerHTML = person4.fullName;
+		
+		
+		let person5 = {
+			firstName : "Maya",
+			lastName : "Dos",
+			language: " ",
+			set lang(lang){
+				this.language = lang.toUpperCase();
+			}
+		};
+		person5.lang = "ua";
+		
+		document.getElementById("person5").innerHTML = "Set method UpperCase" + ": " + person5.language;
+		
+		
+		let obj = {
+			counter : 0,
+			get reset(){
+				this.counter = 0;
+			},
+			
+			get increment(){
+				this.counter++;
+			},
+			
+			get decrement(){
+				this.counter--;
+			},
+			
+			set add(value){
+				this.counter += value;
+			},
+			
+			set subtract(value){
+				this.counter -= value;
+			}
+		};
+		
+		obj.reset;
+		obj.add = 5;
+		obj.subtract = 1;
+		obj.increment;
+		obj.decrement;
+		
+		console.log(obj);
+		
+	</script>
+</html>

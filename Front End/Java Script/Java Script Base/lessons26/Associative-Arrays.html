@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Associative Arrays</title>
+</head>
+<script>
+	let arr ={};
+	let car = {
+		"color" : "red",
+		"speed" : 250,
+		"condition" : true,
+		"engine volume": 2
+	};
+	car.color = "yellow";
+	console.log(car['engine volume']);
+	console.log(car.color);
+	//console.log(car);
+</script>
+<body>
+	<div class="param"></div>
+</body>
+	<script>
+		let param = document.querySelector(".param");
+		for(let i in car){
+			param.innerHTML += i + " : " + car[i] + "<br />"
+		}
+	</script>
+</html>

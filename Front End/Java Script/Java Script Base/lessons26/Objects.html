@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Objects</title>
+</head>
+<script>
+	//let obj = new Object(); // синтаксис коструктора объекта
+	//let obj = {}; // литерал объекта
+	/*let user = {
+		name : "Nastya",
+		"last name" : "Voronova",
+		age: 30
+	};
+	
+	delete user.age;
+	user.name = "Alla";
+	
+	console.log(user);
+	console.log("Фамилия:" + user["last name"] + " " + "Имя:" + user.name);
+	
+	
+	let animals = {
+		dog: "Pet",
+		cat: "Den",
+		mouse: "Chik"
+	};
+	let win = prompt("Хотите узнать о животных какие у нас есть?","dog,cat,mouse");
+	alert(animals[win]);*/
+	
+	let person ={
+		name: "Maya",
+		lastName : "Verda",
+		id: 4347849490,
+		fullName : function(){
+			return this.name + " " + this.lastName;
+		}
+	};
+	person.name = "Maryna";
+	person.age = 30;
+	delete person.id;
+	
+	console.log(person);
+	console.log(person.name + " " + person.lastName + " " + person.id + " " + person.age);
+	
+	
+</script>
+<body>
+</body>
+</html>

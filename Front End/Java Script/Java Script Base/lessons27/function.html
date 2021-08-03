@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Function</title>
+</head>
+
+<body>
+</body>
+	<script>
+		/*function имя (параметр1, параметр2, параметр3){
+			//тело цикла
+		}*/
+		
+		function foo (b1,b2){
+			return b1*b2;
+		}
+		foo();
+		console.log(foo());
+		
+		
+		let y = myFunction (3, 2);
+		
+		function myFunction (a, b){
+			return a*b;
+		}
+		myFunction();
+		console.log(y);
+		
+		function openBox(id){
+			let display = document.getElementById(id).style.display;
+			if(display =='none'){
+				document.getElementById(id).style.display="block";
+			}else{
+				document.getElementById(id).style.display="none";
+			}
+		}
+	</script>
+</html>
